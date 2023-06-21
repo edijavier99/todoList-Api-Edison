@@ -1,12 +1,61 @@
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.todo-body{
+    border: 1px solid rgb(222, 219, 219);
+    box-shadow: 3px 10px 10px  gray;
+}
+.title{
+    font-size: 80px;
+    color: rgb(251, 189, 98);
+}
+input{
+    height: 40px;
+    border: 0;
+    border-bottom: 1px solid  rgb(222, 219, 219);
+}
+li{
+    list-style: none;
+    height: 40px;
+    border-bottom: 1px solid  rgb(222, 219, 219);
+    display: flex;
+    align-items: center;
+}
+i{
+    float: right;
+}
+.fas{
+    display: none;
+}
+li:hover .fas{
+    display: inline-block;
+}
+li:hover {
+    background-color: white;
+}
+ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+p{
+    font-size: 13px;
+}
+.count-task{
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.page{
+    height: 4px;
+    background-color: white;
+    border-top: 0 !important;
+    border: 1px solid  rgb(222, 219, 219);
+    width: 348px;
+}
+.second{
+    width: 340px;
+}
+.username{
+    border: 1px solid black;
+    padding-left: 15px;
+}
+.name{
+    font-size: 15px;
+}
