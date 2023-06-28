@@ -81,6 +81,16 @@ let Todo = () =>{
                     console.log(error);
                 })             
     }
+    const deleteUser =() =>{
+        fetch('https://assets.breatheco.de/apis/fake/todos/user/' + username, {
+            method: 'DELETE',
+            headers:{
+                'Content-Type': 'application/json',
+            }
+            }),
+            setUsername("")
+            setList([])
+    } 
 
     return(
         <div className="container-fluid vh-100">
@@ -118,8 +128,8 @@ let Todo = () =>{
 				</div>	
 				
 		</div>
-		<div className="page"></div>	
-		<div className="page second "></div>	
+		<div className="page col-3"></div>	
+		<div className="page second col-3"></div>	
         <div className="userBoard mt-5">
             <input
                 className="username"
@@ -133,6 +143,9 @@ let Todo = () =>{
                 }}
             />
             <h1 className="name mt-3">{username}</h1>
+            <button onClick={()=>{
+                deleteUser()
+            }}>Delete User</button>
         </div>
 		</div>
 	</div>
